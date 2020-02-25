@@ -1,0 +1,6 @@
+module shape(VGA_CLK_n, x, y, bgr_data_raw, bgr_data)
+
+input VGA_CLK_n;
+input [9:0] x, y;
+input [23:0] bgr_data_raw;
+output [23:0] bgr_data;

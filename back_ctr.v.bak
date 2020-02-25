@@ -1,0 +1,17 @@
+module back_ctr(
+	VGA_CLK_n,
+	x, 
+	y,
+	bgr_data_raw
+);
+
+	input VGA_CLK_n;
+	input [9:0] x, y;
+	output reg [23:0] bgr_data_raw;
+	always @(posedge VGA_CLK_n) begin
+		if (x < 320) begin
+			bgr_data_raw <= 8'h234644;
+		end
+	end
+
+endmodule

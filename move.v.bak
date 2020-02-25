@@ -1,0 +1,32 @@
+module move(clock, in, out_x,out_y);
+	input clock;
+	input [3:0]in;
+	//input [9:0] in_x, in_y;
+	output [9:0] out_x,out_y;
+
+	reg [9:0]x,y;
+
+	[9:0]x = 9'b0;
+	[9:0]y = 9'b0;
+
+	always@(posedge clock)
+	begin
+		 if(in[0] == 1'b0 && y > 0){
+			y -= 10;	
+		 }
+		 if(in[1] == 1'b0 && y < 380){
+			y += 10;
+		 }
+		 if(in[2] == 1'b0 && x > 0){
+			x -= 10;
+		 }
+		 if(in[3] == 1'b0 && x < 540){
+			x += 10;
+		 }
+	 
+		 out_x <= x;
+		 out_y <= y;
+	 end
+ 
+ endmodule
+ 

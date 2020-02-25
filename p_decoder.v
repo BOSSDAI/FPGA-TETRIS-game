@@ -1,0 +1,44 @@
+module p_decoder(ctrl, out);  
+ input[4:0]ctrl;
+ output [31:0]out;
+ wire [4:0]no;
+ not not1(no[0],ctrl[0]);
+ not not2(no[1],ctrl[1]);
+ not not3(no[2],ctrl[2]);
+ not not4(no[3],ctrl[3]);
+ not not5(no[4],ctrl[4]);
+ 
+ and and1(out[0],no[4],no[3],no[2],no[1],no[0]);
+ and and2(out[1],no[4],no[3],no[2],no[1],ctrl[0]);
+ and and3(out[2],no[4],no[3],no[2],ctrl[1],no[0]);
+ and and4(out[3],no[4],no[3],no[2],ctrl[1],ctrl[0]);
+ and and5(out[4],no[4],no[3],ctrl[2],no[1],no[0]);
+ and and6(out[5],no[4],no[3],ctrl[2],no[1],ctrl[0]);
+ and and7(out[6],no[4],no[3],ctrl[2],ctrl[1],no[0]);
+ and and8(out[7],no[4],no[3],ctrl[2],ctrl[1],ctrl[0]);
+ and and9(out[8],no[4],ctrl[3],no[2],no[1],no[0]);
+ and and10(out[9],no[4],ctrl[3],no[2],no[1],ctrl[0]);
+ and and11(out[10],no[4],ctrl[3],no[2],ctrl[1],no[0]);
+ and and12(out[11],no[4],ctrl[3],no[2],ctrl[1],ctrl[0]);
+ and and13(out[12],no[4],ctrl[3],ctrl[2],no[1],no[0]);
+ and and14(out[13],no[4],ctrl[3],ctrl[2],no[1],ctrl[0]);
+ and and15(out[14],no[4],ctrl[3],ctrl[2],ctrl[1],no[0]);
+ and and16(out[15],no[4],ctrl[3],ctrl[2],ctrl[1],ctrl[0]);
+ and and17(out[16],ctrl[4],no[3],no[2],no[1],no[0]);
+ and and18(out[17],ctrl[4],no[3],no[2],no[1],ctrl[0]);
+ and and19(out[18],ctrl[4],no[3],no[2],ctrl[1],no[0]);
+ and and20(out[19],ctrl[4],no[3],no[2],ctrl[1],ctrl[0]);
+ and and21(out[20],ctrl[4],no[3],ctrl[2],no[1],no[0]);
+ and and22(out[21],ctrl[4],no[3],ctrl[2],no[1],ctrl[0]);
+ and and23(out[22],ctrl[4],no[3],ctrl[2],ctrl[1],no[0]);
+ and and24(out[23],ctrl[4],no[3],ctrl[2],ctrl[1],ctrl[0]);
+ and and25(out[24],ctrl[4],ctrl[3],no[2],no[1],no[0]);
+ and and26(out[25],ctrl[4],ctrl[3],no[2],no[1],ctrl[0]);
+ and and27(out[26],ctrl[4],ctrl[3],no[2],ctrl[1],no[0]);
+ and and28(out[27],ctrl[4],ctrl[3],no[2],ctrl[1],ctrl[0]);
+ and and29(out[28],ctrl[4],ctrl[3],ctrl[2],no[1],no[0]);
+ and and30(out[29],ctrl[4],ctrl[3],ctrl[2],no[1],ctrl[0]);
+ and and31(out[30],ctrl[4],ctrl[3],ctrl[2],ctrl[1],no[0]);
+ and and32(out[31],ctrl[4],ctrl[3],ctrl[2],ctrl[1],ctrl[0]);
+
+endmodule

@@ -1,0 +1,51 @@
+-- Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, the Altera Quartus Prime License Agreement,
+-- the Altera MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Altera and sold by Altera or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=4096;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	0     :   00101101011010000000000000000001;
+	1     :   01000110101100100000000000000000;
+	2     :   00001000000000000000000000000000;
+	[3..23]  :   00000000000000000000000000000000;
+	24    :   00000010100101000111000110010100;
+	25    :   00000010100101000111000100010100;
+	26    :   10110000000000000000000000011110;
+	[27..29]  :   00000000000000000000000000000000;
+	30    :   00000111101111011110011000000100;
+	31    :   10110000000000000000000000100010;
+	[32..33]  :   00000000000000000000000000000000;
+	34    :   10101000000000000000000000000011;
+	35    :   10110000000000000000000000100101;
+	36    :   00000000000000000000000000000000;
+	37    :   00011000000000000000000000101000;
+	38    :   00001000000000000000000000101001;
+	39    :   00000000000000000000000000000000;
+	40    :   00100111110000000000000000000000;
+	41    :   00110000010000100000000000000100;
+	42    :   00110111101111100000000000000100;
+	[43..46]  :   00000000000000000000000000000000;
+	47    :   00101010000010000000000000000001;
+	48    :   01000010010101100000000000000001;
+	49    :   00000010000100100100000000000100;
+	50    :   00000001000010000100000000000000;
+	[51..4095]  :   00000000000000000000000000000000;
+END;
